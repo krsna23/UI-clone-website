@@ -24,8 +24,10 @@
         <div class="container main-nav flex">
             <a class="company-logo" href="#">
                 <img src="./assets/Logo.jpg" alt="company logo">
+                <h3 class="company-name">ApexUsability</h3>
             </a>
-            <div class="nav-links">
+
+            <div class="nav-links" id="nav-links">
                 <ul class="flex">
                     <li><a href="#" class="hover-link">Products</a></li>
                     <li><a href="#" class="hover-link">Customer</a></li>
@@ -35,7 +37,7 @@
                     <li><a href="#" class="hover-link primary-button">Sign up</a></li>
                 </ul>
             </div>
-            <a href="#" class="nav-toggle hover-link">
+            <a href="#" class="nav-toggle hover-link" id="nav-toggle">
                 <i class="fa-solid fa-bars"></i>
             </a>
         </div>
@@ -222,6 +224,7 @@
         <div class="container flex footer-container">
             <a href="#" class="company-logo">
                 <img src="./assets/Logo.jpg" alt="Logo">
+                <h3 class="company-name">ApexUsability</h3>
             </a>
 
             <div class="link-column flex">
@@ -268,5 +271,13 @@
         </div>  
     </div>
     <script src="https://kit.fontawesome.com/5c93051c35.js" crossorigin="anonymous"></script>        
+    <script>
+        const toggleButton = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggleButton.addEventListener('click', ()=>{
+            navLinks.classList.toggle('active');
+        })
+    </script>
 </body>
 </html>

@@ -125,6 +125,11 @@ ul{
 .main-nav{
     margin-top: 20 px;
     justify-content: space-between;
+    position: relative;
+}
+.company-logo{
+    display: flex;
+    text-align: center;
 }
 
 .company-logo img{
@@ -200,6 +205,7 @@ header{
 
 .features-header{
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .features-heading-text{
@@ -251,8 +257,11 @@ header{
 
 /* Examples section */
 
+.examples-section{
+    padding: 80px var(--padding-inline-section);
+}
+
 .examples-header{
-    margin-top: 20px;
     flex-direction: column;
     gap: 20px;
 }
@@ -297,6 +306,7 @@ header{
     flex-direction: column;
     gap: 30px;
     color: white;
+    text-align: center;
 }
 
 .cta-section-container p{
@@ -330,6 +340,7 @@ footer{
 .subfooter-container{
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 992px) {
